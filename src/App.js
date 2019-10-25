@@ -320,6 +320,7 @@ function App() {
 	// resets user data back to defaults
 	function resetUserData() {
 		setUserWeather(setDefaultDBValues());
+		checkDay('reset');
 	}
 
 	/**
@@ -362,7 +363,8 @@ function App() {
 	const [weatherInfo, setWeatherInfo] = useState(null);
 
 	// get user state from db or load default values
-	const userWeatherFromDB = checkDb() || setDefaultDBValues();
+	const initUserInfoFromDB = checkDb();
+	const userWeatherFromDB = (Object.keys(initUserInfoFromDB).length > 0 && initUserInfoFromDB) || setDefaultDBValues();
 	const [userWeatherState, setUserWeather] = useState(userWeatherFromDB);
 
 	const [dayInfo, setDay] = useState({});
@@ -403,18 +405,18 @@ function App() {
 
 	function setTemperature(data) {
 		userdb.set('userWeather.temp', data).write();
-		checkDay(true);
+		checkDay('reset');
 	}
 
 
 	function setHumidity(data) {
 		userdb.set('userWeather.humidity', data).write();
-		checkDay(true);
+		checkDay('reset');
 	}
 
 	function setPressure(data) {
 		userdb.set('userWeather.pressure', data).write();
-		checkDay(true);
+		checkDay('reset');
 	}
 
 	function calcGoodDay(tempDiff, pressureDiff, humidityDiff) {
@@ -425,7 +427,7 @@ function App() {
 		return ((tempHazard - temp) < tempTreshhold) || ((pressureHazard - pressure) < pressureTreshhold) || ((humidityHazard - humidity) < humidityTreshhold);
 	}
 
-	function checkDay(edited) {
+	function checkDay(reset) {
 		const { main } = weatherInfo;
 		const { userWeather } = userWeatherState;
 		
@@ -434,7 +436,7 @@ function App() {
 			main.humidity - userWeather.humidity[1]);
 		const isHazard = calcHazard(userWeather.temp[1], userWeather.pressure[1], userWeather.humidity[1]);
 
-		edited && showEditedMessage();
+		reset && showEditedMessage();
 
 		setDay({
 			isGoodDay,
@@ -465,7 +467,7 @@ function App() {
 					<Line><Title>Pressure: </Title>{weatherInfo.main.pressure} hPa</Line>
 					<Line><Title>Humidity: </Title>{weatherInfo.main.humidity} %</Line>
 				</WeatherInfo>}
-				{!hasError && !isLoading && <UserData>
+				{!hasError && !isLoading && Object.keys(userWeatherState).length > 0 && <UserData>
 					<h2>Your perfect weather</h2>
 					<UserLine>
 						<Title>Temperature: </Title>
