@@ -1,0 +1,314 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test weather app with mocked data 1`] = `
+<div
+  class="sc-bdVaJa Aiczq App"
+  data-testid="weatherapp"
+>
+  <span>
+    <div
+      class="sc-gZMcBi hRgozl"
+    >
+      <h2
+        class="sc-gqjmRU dgSeuN"
+      >
+        Bummer, this weather sucks!
+      </h2>
+    </div>
+  </span>
+  <div
+    class="sc-bwzfXH jYNLtA"
+  >
+    <div
+      class="sc-htpNat sc-bxivhb kmhAFl"
+    >
+      <span
+        class="sc-bZQynM llHvXe"
+      >
+        <h2>
+          Weather in your location
+        </h2>
+      </span>
+      <span
+        class="sc-bZQynM llHvXe"
+      >
+        <span
+          class="sc-dnqmqq eEceQv"
+        >
+          <img
+            alt="current-weather-icon"
+            src="http://openweathermap.org/img/w/01n.png"
+          />
+        </span>
+      </span>
+      <span
+        class="sc-bZQynM llHvXe"
+      >
+        <span
+          class="sc-htoDjs jWKIFR"
+        >
+          You're in:
+        </span>
+         
+        <i>
+          Tawarano
+          , 
+          JP
+        </i>
+      </span>
+      <span
+        class="sc-bZQynM llHvXe"
+      >
+        <span
+          class="sc-htoDjs jWKIFR"
+        >
+          Temperature: 
+        </span>
+        285.514
+         C
+      </span>
+      <span
+        class="sc-bZQynM llHvXe"
+      >
+        <span
+          class="sc-htoDjs jWKIFR"
+        >
+          Pressure: 
+        </span>
+        1013.75
+         hPa
+      </span>
+      <span
+        class="sc-bZQynM llHvXe"
+      >
+        <span
+          class="sc-htoDjs jWKIFR"
+        >
+          Humidity: 
+        </span>
+        100
+         %
+      </span>
+    </div>
+    <div
+      class="sc-htpNat sc-ifAKCX epnGwV"
+    >
+      <h2>
+        Your perfect weather
+      </h2>
+      <span
+        class="sc-bZQynM sc-gzVnrw kxVUaf"
+      >
+        <span
+          class="sc-htoDjs jWKIFR"
+        >
+          Temperature: 
+        </span>
+        <div
+          class="sc-fjdhpX bSekuI"
+          style="position: relative;"
+        >
+          <div
+            class="sc-cSHVUG bImyOM track track-0"
+            style="position: absolute; left: 0px; right: 0px;"
+          />
+          <div
+            class="sc-cSHVUG fHWWvE track track-1"
+            style="position: absolute; left: 0px; right: 0px;"
+          />
+          <div
+            class="sc-cSHVUG gZzsUY track track-2"
+            style="position: absolute; left: 0px; right: 0px;"
+          />
+          <div
+            class="sc-cSHVUG bImyOM track track-3"
+            style="position: absolute; left: 0px; right: 0px;"
+          />
+          <div
+            aria-orientation="horizontal"
+            aria-valuemax="60"
+            aria-valuemin="-60"
+            aria-valuenow="-60"
+            class="sc-jzJRlG ffvRdo thumb thumb-0 "
+            role="slider"
+            style="position: absolute; z-index: 1; left: 0px;"
+            tabindex="0"
+          >
+            -60
+          </div>
+          <div
+            aria-orientation="horizontal"
+            aria-valuemax="60"
+            aria-valuemin="-60"
+            aria-valuenow="20"
+            class="sc-jzJRlG hzdKNS thumb thumb-1 "
+            role="slider"
+            style="position: absolute; z-index: 2; left: 0px;"
+            tabindex="0"
+          >
+            20
+          </div>
+          <div
+            aria-orientation="horizontal"
+            aria-valuemax="60"
+            aria-valuemin="-60"
+            aria-valuenow="60"
+            class="sc-jzJRlG ffvRdo thumb thumb-2 "
+            role="slider"
+            style="position: absolute; z-index: 3; left: 0px;"
+            tabindex="0"
+          >
+            60
+          </div>
+        </div>
+      </span>
+      <span
+        class="sc-bZQynM sc-gzVnrw kxVUaf"
+      >
+        <span
+          class="sc-htoDjs jWKIFR"
+        >
+          Pressure: 
+        </span>
+        <div
+          class="sc-fjdhpX bSekuI"
+          style="position: relative;"
+        >
+          <div
+            class="sc-cSHVUG bImyOM track track-0"
+            style="position: absolute; left: 0px; right: 0px;"
+          />
+          <div
+            class="sc-cSHVUG fHWWvE track track-1"
+            style="position: absolute; left: 0px; right: 0px;"
+          />
+          <div
+            class="sc-cSHVUG gZzsUY track track-2"
+            style="position: absolute; left: 0px; right: 0px;"
+          />
+          <div
+            class="sc-cSHVUG bImyOM track track-3"
+            style="position: absolute; left: 0px; right: 0px;"
+          />
+          <div
+            aria-orientation="horizontal"
+            aria-valuemax="2000"
+            aria-valuemin="800"
+            aria-valuenow="800"
+            class="sc-jzJRlG ffvRdo thumb thumb-0 "
+            role="slider"
+            style="position: absolute; z-index: 1; left: 0px;"
+            tabindex="0"
+          >
+            800
+          </div>
+          <div
+            aria-orientation="horizontal"
+            aria-valuemax="2000"
+            aria-valuemin="800"
+            aria-valuenow="1000"
+            class="sc-jzJRlG hzdKNS thumb thumb-1 "
+            role="slider"
+            style="position: absolute; z-index: 2; left: 0px;"
+            tabindex="0"
+          >
+            1000
+          </div>
+          <div
+            aria-orientation="horizontal"
+            aria-valuemax="2000"
+            aria-valuemin="800"
+            aria-valuenow="2000"
+            class="sc-jzJRlG ffvRdo thumb thumb-2 "
+            role="slider"
+            style="position: absolute; z-index: 3; left: 0px;"
+            tabindex="0"
+          >
+            2000
+          </div>
+        </div>
+      </span>
+      <span
+        class="sc-bZQynM sc-gzVnrw kxVUaf"
+      >
+        <span
+          class="sc-htoDjs jWKIFR"
+        >
+          Humidity: 
+        </span>
+        <div
+          class="sc-fjdhpX bSekuI"
+          style="position: relative;"
+        >
+          <div
+            class="sc-cSHVUG bImyOM track track-0"
+            style="position: absolute; left: 0px; right: 0px;"
+          />
+          <div
+            class="sc-cSHVUG fHWWvE track track-1"
+            style="position: absolute; left: 0px; right: 0px;"
+          />
+          <div
+            class="sc-cSHVUG gZzsUY track track-2"
+            style="position: absolute; left: 0px; right: 0px;"
+          />
+          <div
+            class="sc-cSHVUG bImyOM track track-3"
+            style="position: absolute; left: 0px; right: 0px;"
+          />
+          <div
+            aria-orientation="horizontal"
+            aria-valuemax="150"
+            aria-valuemin="0"
+            aria-valuenow="0"
+            class="sc-jzJRlG ffvRdo thumb thumb-0 "
+            role="slider"
+            style="position: absolute; z-index: 1; left: 0px;"
+            tabindex="0"
+          >
+            0
+          </div>
+          <div
+            aria-orientation="horizontal"
+            aria-valuemax="150"
+            aria-valuemin="0"
+            aria-valuenow="50"
+            class="sc-jzJRlG hzdKNS thumb thumb-1 "
+            role="slider"
+            style="position: absolute; z-index: 2; left: 0px;"
+            tabindex="0"
+          >
+            50
+          </div>
+          <div
+            aria-orientation="horizontal"
+            aria-valuemax="150"
+            aria-valuemin="0"
+            aria-valuenow="150"
+            class="sc-jzJRlG ffvRdo thumb thumb-2 "
+            role="slider"
+            style="position: absolute; z-index: 3; left: 0px;"
+            tabindex="0"
+          >
+            150
+          </div>
+        </div>
+      </span>
+      <span
+        class="sc-bZQynM sc-gzVnrw kxVUaf"
+      >
+        <button
+          class="sc-iwsKbI nobwD"
+        >
+          Reset
+        </button>
+      </span>
+      <div
+        class="sc-jTzLTM dnTHSx"
+      >
+        saved!
+      </div>
+    </div>
+  </div>
+</div>
+`;
