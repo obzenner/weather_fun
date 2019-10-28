@@ -26,3 +26,9 @@ You will also see any lint errors in the console.
 
 Launches the test runner in the interactive watch mode.<br />
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+## TODO next
+- write tests for state changes (not just init render)
+- use immutable lib for db object handling instead of replying on `cloneDeep
+- implement polling or refresh weather
+- add `flow` types (really wanted to add it here)
