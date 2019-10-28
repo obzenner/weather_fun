@@ -1,6 +1,5 @@
 import React from 'react';
-import axios from 'axios';
-import {render, fireEvent, waitForElement} from '@testing-library/react'
+import {render, waitForElement} from '@testing-library/react'
 import App from './App';
 
 const mockedWeatherData = {
